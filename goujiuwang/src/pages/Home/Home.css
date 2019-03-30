@@ -1,0 +1,22 @@
+.searchBox{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    z-index: 99;
+    background: #fff;
+    border-radius: 6px;
+    padding: 5px 5%;
+    height: 35px;
+    line-height: 20px;
+}
+.searchBox i{
+    margin-right: 10px;
+    /* display: inline-block; */
+    color:#ccc;
+}
+.searchBox span{
+    color:#ccc;
+
+}
