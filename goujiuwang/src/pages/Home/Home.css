@@ -1,3 +1,6 @@
+.HomeHeader{
+    position: relative;
+}
 .searchBox{
     position: absolute;
     width: 80%;
@@ -7,9 +10,9 @@
     z-index: 99;
     background: #fff;
     border-radius: 6px;
-    padding: 5px 5%;
+    padding: 0 5%;
     height: 35px;
-    line-height: 20px;
+    line-height: 35px;
 }
 .searchBox i{
     margin-right: 10px;
@@ -19,4 +22,58 @@
 .searchBox span{
     color:#ccc;
 
+}
+#swiper1 img{
+    width: 100%;
+}
+#swiper1 .swiper-pagination span{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin-right: 6px;
+    background:#999;
+    border-radius: 50%;
+}
+#swiper1 .swiper-pagination .now{
+    background:#f60;
+}
+/* 头条 */
+.Notice{
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    line-height: 30px;
+    padding:0 15px;
+}
+.Notice .ico{
+    line-height: 30px;
+    width: 85px;
+    float: left;
+    height: 30px;
+    border-right: 1px #ccc solid;
+    margin-right: 5px;
+}
+.Notice .ico img{
+    width: 80px;
+    margin-top: 8px;
+    vertical-align: top;
+}
+/* 头条轮播图 */
+#swiper2 {
+    overflow: hidden;
+    height: 30px;
+}
+/* 分类导航 */
+.classify{
+    overflow: hidden;
+}
+.classify>div{
+    float: left;
+    text-align: center;
+    width: 20%;
+    color: #999;
+    margin: 10px auto;
+}
+.classify>div img{
+    width: 100%;
 }
