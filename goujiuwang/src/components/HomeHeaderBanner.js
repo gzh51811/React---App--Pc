@@ -16,7 +16,7 @@ class HomeHeaderBanner extends Component{
         }
     }
     componentDidMount(){
-        var mySwiper = new Swiper("#swiper1", {
+        new Swiper("#swiper1", {
             loop: true,
             slidesPerView: 1,
             centeredSlides: true,
@@ -36,7 +36,7 @@ class HomeHeaderBanner extends Component{
             <div className="banner1">
                 <div className="swiper-container" id="swiper1">
                     <div className="swiper-wrapper">
-                    {this.state.bannerImg.map(bannerImg=> <div className="swiper-slide">
+                    {this.state.bannerImg.map((bannerImg,idx)=> <div className="swiper-slide" key={idx}>
                             <img src={bannerImg} alt={bannerImg}/>
                         </div>)}
                     </div>

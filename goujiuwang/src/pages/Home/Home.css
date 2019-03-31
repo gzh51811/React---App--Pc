@@ -106,3 +106,55 @@
     color: #fff;
     display: inline-block;
 }
+/* 秒杀商品轮播图 */
+#swiper3 .swiper-slide{
+    width: 80%;
+}
+#swiper3 .swiper-wrapper{
+    margin-left: -37.425px;
+}
+#swiper3 {
+    background: #f8f8f8;
+}
+#swiper3 .swiper-slide .good{
+  
+    padding: 10px;
+    height: 100px;
+}
+#swiper3 .swiper-slide .good img{
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+#swiper3 .swiper-slide .box{
+    position: relative;
+    height: 100px;
+    margin-left: 120px;
+}
+#swiper3 .swiper-slide .box h5{
+    padding: 0;
+    margin: 5px 0;
+    border-bottom: #eee 1px solid;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+#swiper3 .swiper-slide .box .bt{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+#swiper3 .swiper-slide .box .bt span{
+    color: #f44;
+    float: left;
+}
+#swiper3 .swiper-slide .box .bt a{
+    background: #5EAFFE;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 12px;
+}

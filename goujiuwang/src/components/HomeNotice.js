@@ -22,7 +22,7 @@ class HomeNotice extends Component{
     render(){
         return (
             <div className="Notice">
-                <div class="ico">
+                <div className="ico">
                     <img src={require('../assets/images/toutiao.png')} alt="aaa" />
                 </div>
                 <div className="swiper-container" id="swiper2">
