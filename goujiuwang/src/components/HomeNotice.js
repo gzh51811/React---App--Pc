@@ -8,7 +8,7 @@ class HomeNotice extends Component{
         }
     }
     componentDidMount(){
-        var mySwiper = new Swiper("#swiper2", {
+        new Swiper("#swiper2", {
             direction : 'vertical',
             loop: true,
             slidesPerView: 1,
