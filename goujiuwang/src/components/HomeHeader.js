@@ -4,6 +4,9 @@ import HomeNotice from "./HomeNotice";
 import HomeGoodscCassify from "./HomeGoodscCassify";
 import HomeOverSeckill from "./HomeOverSeckill";
 import HomeSeckillGoods from "./HomeSeckillGoods";
+import HomeAdvertising from "./HomeAdvertising";
+import HomeContainer from "./HomeContainer";
+
 import withAxios from "../hoc/withAxios";
 import React,{Component} from "react";
 class HomeHeader extends Component{
@@ -21,8 +24,6 @@ class HomeHeader extends Component{
         })
         this.setState({
             seckillGoods:res.data.data[0].AppSeckill
-        },()=>{
-            console.log(this.state.seckillGoods)
         })
     }
     render(){
@@ -34,6 +35,8 @@ class HomeHeader extends Component{
                 <HomeGoodscCassify></HomeGoodscCassify>
                 <HomeOverSeckill seckillGoods={this.state.seckillGoods}></HomeOverSeckill>
                 <HomeSeckillGoods goods={this.state.seckillGoods.AppSeckillProList}></HomeSeckillGoods>
+                <HomeAdvertising></HomeAdvertising>
+                <HomeContainer></HomeContainer>
             </div>
         )
     }

@@ -158,3 +158,41 @@
     padding: 3px;
     font-size: 12px;
 }
+/* 广告区推荐商品 */
+.HomeAdvertising .recommend{
+    margin: 10px auto;
+}
+.HomeAdvertising .recommend img{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+.recommend img:first-child{
+    padding-left: 0px;
+}
+.recommend img:last-child{
+    padding-right: 0px;
+}
+/*推荐商品 容器 */
+.HomeContainer{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 推荐商品2 */
+.recommend2{
+    margin: 10px auto;
+}
+/* 3保 */
+.index_ico{
+    text-align: center;
+    margin: 10px auto;
+}
+.index_ico i{
+    font-size: 18px;
+}
+.index_ico span{
+    margin-left: 10px;
+    color:red;
+}

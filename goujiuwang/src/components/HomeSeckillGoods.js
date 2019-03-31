@@ -5,7 +5,7 @@ class HomeSeckillGoods extends Component{
     constructor(){
         super();
         this.state={
-            seckillGoods:['asd']
+            seckillGoods:[]
         }
        
     }
