@@ -6,6 +6,7 @@ import HomeOverSeckill from "./HomeOverSeckill";
 import HomeSeckillGoods from "./HomeSeckillGoods";
 import HomeAdvertising from "./HomeAdvertising";
 import HomeContainer from "./HomeContainer";
+import HomeGoodsList from "./HomeGoodsList";
 
 import withAxios from "../hoc/withAxios";
 import React,{Component} from "react";
@@ -37,6 +38,7 @@ class HomeHeader extends Component{
                 <HomeSeckillGoods goods={this.state.seckillGoods.AppSeckillProList}></HomeSeckillGoods>
                 <HomeAdvertising></HomeAdvertising>
                 <HomeContainer></HomeContainer>
+                <HomeGoodsList></HomeGoodsList>
             </div>
         )
     }
