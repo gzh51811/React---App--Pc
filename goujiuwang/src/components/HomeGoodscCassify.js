@@ -1,37 +1,12 @@
 import React from "react";
-export default ()=>{
+export default (props)=>{
     return (
         <div className="classify">
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
-            <div>
-                <img src={require('../assets/images/jiufenlei.jpg')} alt="aaa" />
-            </div>
+            {props.goodsClassifyImg.map((img,idx)=>(
+                <div key={idx}>
+                    <img src={img.Pic} alt={img.Name} />
+                </div>
+            ))}
         </div>
     )
 }

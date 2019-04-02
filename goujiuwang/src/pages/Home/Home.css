@@ -1,3 +1,16 @@
+
+.container{
+   position: relative;
+}
+#main{
+    margin-bottom: 50px;
+}
+#footer{
+    width: 100%;
+position: fixed;
+bottom: 0;
+background: #fff;
+}
 .HomeHeader{
     position: relative;
 }
@@ -16,12 +29,10 @@
 }
 .searchBox i{
     margin-right: 10px;
-    /* display: inline-block; */
     color:#ccc;
 }
 .searchBox span{
     color:#ccc;
-
 }
 #swiper1 img{
     width: 100%;
@@ -241,4 +252,34 @@
 }
 .red {
     color: #fb223e;
+}
+
+
+/* 底部导航 */
+.goodsNav{
+    height: 44px;
+    line-height: 44px;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+}
+.current{
+    color: #f44;
+    border-bottom: 2px solid #f44;
+}
+.footer{
+    height: 50px;
+    padding-top: 4px;
+}
+.footer>div{
+    width: 20%;
+    text-align: center;
+}
+.footer>div i {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.footer>div p{
+    font-size: 12px;
 }

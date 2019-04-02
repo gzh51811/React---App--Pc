@@ -10,7 +10,6 @@ class HomeSeckillGoods extends Component{
        
     }
     componentWillReceiveProps(nextProps){
-        console.log(nextProps)
         this.setState({
             seckillGoods:nextProps.goods
         },()=>{
@@ -21,13 +20,13 @@ class HomeSeckillGoods extends Component{
               });
         })
     }
-    render(){ console.log(this.state)
+    render(){ 
         
         return (
              <div className="seckillGood">
                 <div className="swiper-container" id="swiper3">
                     <div className="swiper-wrapper">
-                        {this.state.seckillGoods.map((goods,idx)=>(
+                        {this.props.goods?this.state.seckillGoods.map((goods,idx)=>(
                             <div className="swiper-slide" key={idx} >
                                 <div className="good" key={idx}>
                                     <img src={'http://img0.gjw.com/product/'+goods.imgUrl} alt={goods.Id} style={{width:"100px"}}/>
@@ -40,7 +39,7 @@ class HomeSeckillGoods extends Component{
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        )):''}
                     </div>
                 </div>
              </div>
