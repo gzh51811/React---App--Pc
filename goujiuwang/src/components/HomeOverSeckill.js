@@ -8,12 +8,10 @@ class countDown extends Component{
             seconds: "00",
            seckillGoods:[],
            overTime:''
-
         }
     }
 
     componentWillReceiveProps(nextProps){
-        // console.log(nextProps.seckillGoods.EndTime)
         const overTime = new Date(nextProps.seckillGoods.EndTime);
         this.setState({
             overTime
@@ -25,7 +23,11 @@ class countDown extends Component{
     componentWillUnmount() {
         clearTimeout(this.time);
     }
-    _countDown= () => {
+    
+    _countDown(){
+        if(this.time){
+            clearTimeout(this.time);
+        }
         const currTime = new Date().getTime();
         const deadline = new Date(this.state.overTime);
         const dTime = deadline - currTime;
@@ -56,7 +58,6 @@ class countDown extends Component{
             <div className="seckill">
                 <b>掌上秒杀</b>
                 <span>距结束</span>
-                {/* <i>{this.state.hours}</i> : <i>{this.state.minutes}</i> : <i>{this.state.seconds}</i> */}
                 <i>{hours}</i> : <i>{minutes}</i> : <i>{seconds}</i>
             </div>
         )

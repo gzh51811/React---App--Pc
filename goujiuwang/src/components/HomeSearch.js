@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import { Icon } from 'antd';
 import 'antd/dist/antd.css';
+import "../pages/Home/Home.css"
 class HomeSearch extends Component{
     render(){
         return (
