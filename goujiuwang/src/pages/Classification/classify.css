@@ -1,0 +1,37 @@
+.list_home{
+    margin-top: 5px;
+    border-top: 1px #eee solid;
+    color: #525252;
+    overflow: hidden;
+}
+.list_home .box .title{
+    margin: 0 auto;
+    line-height: 35px;
+    width: 98%;
+    font-size: 18px;
+}
+.list_home .box .title span{
+    color: #999;
+    font-size: 12px;
+    float: right;
+}
+.classifyChunk{
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+.goodsType{
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    background-color: #f3f3f3;
+    font-size: 13px;
+    line-height: 35px;
+    margin-bottom: 5px;
+    background-clip: content-box;
+}
+.goodsType span{
+    padding-left: 5px;
+    width: 100%;
+    display: block;
+    height: 100%;
+    color: #333;
+}
