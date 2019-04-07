@@ -1,0 +1,143 @@
+.search-top{
+    width: 100%;
+    height: 46px;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    line-height: 46px;
+    /* display: fixed; */
+}
+.back{
+    width: 45px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+}
+.searchBox2{
+    margin: 6px 15px;
+    margin-right: 0px;
+    width: 265px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.searchBox2>div{
+    height: 30px;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+.searchBox2>div input{
+    background: #ECECEC;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    vertical-align: top;
+    padding: 3px 0px 3px 30px;
+}
+.searchIcon{
+
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+}
+.searchIcon svg{
+    vertical-align: middle;
+}
+.searchBtn{
+    color: #949494;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/* 排序 */
+.GoodsSort{
+    width: 100%;
+    color:#000;
+}
+.sortBox{
+    text-align: center;
+    padding: 8px 0;
+}
+.sortBox>div{
+    border-right: solid 1px #e9e9e9;
+    line-height: 30px;
+}
+.sortBox>div:last-child{
+    border-right: none;
+}
+/* 商品列表 */
+.goodsListContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pro_list{
+    padding-top: 90px;
+}
+/* .pro_list .pro_item2{
+    width: 94%;
+    margin-left: 1%;
+    height: 280px;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 5px;
+    margin-bottom: 1%;
+}
+.pro_list .pro_item2:nth-child(odd) {
+    margin-left: 0%;
+}
+.pro_list .pro_item2>span{
+    color: #999;
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+}
+.pro_list .pro_item2 .pic{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.pro_list .pro_item2 p{
+    color: #444;
+    text-align: left;
+    float: left;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+.pro_list .pro_item2 .price {
+    text-align: left;
+    color: #ac2023;
+    margin-right: 8px;
+    font-weight: 600;
+}
+.pro_list .pro_item2 .tip {
+    line-height: 1.8;
+    text-align: left;
+    color: #999;
+    float: left;
+}
+.tit2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.3;
+    margin: 5px 0;
+    height: 36px;
+}
+.tip {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+} */
