@@ -5,7 +5,6 @@ class Footer extends Component{
     constructor(){
         super();
         this.state={
-            isShowNav:true,
             current:"",
             contents:[
                 {
@@ -20,8 +19,7 @@ class Footer extends Component{
                 },
                 {
                     text:'专享福利',
-                    img:require('../assets/images/fuli.png'),
-                    route:''
+                    img:require('../assets/images/fuli.png')
                 },
                 {
                     text:'购物车',
@@ -36,23 +34,10 @@ class Footer extends Component{
             ]
         }
     }
-    componentWillReceiveProps(nextprops){
-        let res = this.state.contents.some(item=>(
-            item.route===nextprops.history.location.pathname
-        ))
-        this.setState({
-            isShowNav:res
-        })
-    }
+  
     componentWillMount(){
         this.setState({
             current:this.props.history.location.pathname
-        })
-        let res = this.state.contents.some(item=>(
-            item.route===this.props.history.location.pathname
-        ))
-        this.setState({
-            isShowNav:res
         })
     }
     changeCurrent(idx,content){
@@ -93,9 +78,7 @@ class Footer extends Component{
     render(){
         return (
             <div className="footer" >
-                {
-                    this.state.isShowNav?this.navList():''
-                }
+                {this.navList()}
             </div>
         )
     }

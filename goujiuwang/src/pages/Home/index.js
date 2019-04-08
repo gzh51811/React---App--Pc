@@ -9,12 +9,12 @@ import HomeAdvertising from "../../components/HomeAdvertising";
 import HomeContainer from "../../components/HomeContainer";
 import HomeGoodsList from "../../components/HomeGoodsList";
 import HomeSearch from "../../components/HomeSearch";
-
 import withAxios from "../../hoc/withAxios";
 class Home extends Component{
     constructor(){
         super();
         this.state={
+            hasAppSeckill:false,
             seckillGoods:[],
             homeMsg:[],
             goodsClassify:[]
@@ -26,11 +26,17 @@ class Home extends Component{
                 userid:0
             }
         })
-        this.setState({
-            seckillGoods:res.data.data[0].AppSeckill
-        },()=>{
-            console.log("seckill",this.state.seckillGoods)
-        })
+        try{
+            this.setState({
+                seckillGoods:res.data.data[0].AppSeckill,
+                hasAppSeckill:true
+            })
+        }
+        catch{
+            this.setState({
+                hasAppSeckill:false
+            })
+        }
     }
     async getHomePageImg(){
         let res = await this.props.axios.get('/BtCApi/Home/GetHomePageImg');
@@ -51,7 +57,13 @@ class Home extends Component{
                     <HomeHeaderBanner></HomeHeaderBanner>
                     <HomeNotice></HomeNotice>
                     <HomeGoodscCassify goodsClassifyImg={this.state.goodsClassify}></HomeGoodscCassify>
-                    <HomeOverSeckill seckillGoods={this.state.seckillGoods}></HomeOverSeckill>
+                    {
+                        this.state.hasAppSeckill
+                        ?
+                        <HomeOverSeckill seckillGoods={this.state.seckillGoods}></HomeOverSeckill>
+                        :
+                        ""
+                    }
                     <HomeSeckillGoods goods={this.state.seckillGoods.AppSeckillProList}></HomeSeckillGoods>
                     <HomeAdvertising></HomeAdvertising>
                     <HomeContainer></HomeContainer>

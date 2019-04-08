@@ -79,7 +79,8 @@
 .pro_list{
     padding-top: 90px;
 }
-/* .pro_list .pro_item2{
+
+.pro_list .pro_item2{
     width: 94%;
     margin-left: 1%;
     height: 280px;
@@ -88,9 +89,13 @@
     overflow: hidden;
     padding: 5px;
     margin-bottom: 1%;
+    box-sizing:content-box;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
 }
-.pro_list .pro_item2:nth-child(odd) {
+.pro_list .ant-col-12:nth-child(odd) .pro_item2 {
     margin-left: 0%;
+    border-left: none;
 }
 .pro_list .pro_item2>span{
     color: #999;
@@ -140,4 +145,4 @@
     color: #666;
     font-size: 12px;
     line-height: 1.5;
-} */
+}

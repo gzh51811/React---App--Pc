@@ -13,7 +13,7 @@ class GoodsListSearch extends Component{
                         <input  type="text" placeholder="请输入商品名称"/>
                     </div>
                 </div>
-                <div className="searchBtn fr">搜索</div>
+                <div className="searchBtn fl">搜索</div>
             </div>
         )
     }
