@@ -16,7 +16,6 @@ class ClassifyList extends Component{
         })
     }
     boxShow(){
-        console.log(this.state.goodsClassify)
         return this.state.goodsClassify.map((classifyList,idx)=>(
             <div className="box" key={idx}>
                 <div className="title">

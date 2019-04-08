@@ -6,6 +6,7 @@ import GoodsList from "../pages/GoodsList";
 import My from "../pages/My/";
 import Home from "../pages/Home/";
 import Footer from "../components/Footer";
+import GoodsDetails from "../pages/GoodsDetails/";
 
 class App extends Component{
     constructor(){
@@ -42,6 +43,7 @@ class App extends Component{
                         <Route path="/Classification" component={Classification}></Route>
                         <Route path="/GoodsList" component={GoodsList}></Route>
                         <Route path="/My" component={My}></Route>
+                        <Route path="/GoodsDetails" component={GoodsDetails}></Route>
                         <Redirect from="/" to="/Home"></Redirect>
                     </Switch>
                 </div>
