@@ -19,7 +19,7 @@ class HomeGoodscCassify extends Component{
         )
     }
 }
-HomeGoodscCassify = withRouter(HomeGoodscCassify)
+HomeGoodscCassify = withRouter(HomeGoodscCassify);
 export default HomeGoodscCassify
 
 

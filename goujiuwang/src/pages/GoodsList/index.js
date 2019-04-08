@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import GoodsListSearch from "../../components/GoodsListSearch";
-import ClassifySort from "../../components/ClassifySort";
+import GoodsListSort from "../../components/GoodsListSort";
 import GoodsLists from "../../components/GoodsLists";
 
 import "./GoodsList.css";
@@ -9,7 +9,7 @@ class GoodsList extends Component{
         return (
             <div className="GoodsList">
                 <GoodsListSearch style={{position:'fixed',top:'0px',width:"100%"}}></GoodsListSearch>
-                <ClassifySort></ClassifySort>
+                <GoodsListSort></GoodsListSort>
                 <GoodsLists></GoodsLists>
             </div>
         )

@@ -34,7 +34,7 @@ class HomeSeckillGoods extends Component{
                                         <h5>{goods.ProductName}</h5>
                                         <div className="bt">
                                             <span>￥{goods.Price}</span>
-                                            <a className="btn_qg fr">马上抢</a>
+                                            <i className="btn_qg fr">马上抢</i>
                                         </div>
                                     </div>
                                 </div>

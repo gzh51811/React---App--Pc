@@ -44,7 +44,7 @@ class HomeGoodsList extends Component{
                 <Col key={item.ID} span={12}>
                     <div className="goods" style={{paddingLeft: "5px" ,paddingRight: "5px"}}>
                         <div className="pro_item">
-                            <a ><img
+                            <span ><img
                                     src={item.Pic} alt=""
                                     className="pic"/>
                                 <p className="tit2"> {item.Name} </p>
@@ -52,7 +52,7 @@ class HomeGoodsList extends Component{
                                     {this.listAtivityName(item.listAtivityName)}
                                 </div>
                                 <div className="red">￥{item.ExtField}</div>
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </Col>

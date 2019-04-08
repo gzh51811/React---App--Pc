@@ -162,7 +162,7 @@
     color: #f44;
     float: left;
 }
-#swiper3 .swiper-slide .box .bt a{
+#swiper3 .swiper-slide .box .bt i{
     background: #5EAFFE;
     color: #fff;
     border-radius: 5px;
@@ -216,13 +216,13 @@
 .goods .pro_item{
     border: #eee 1px solid;
 }
-.goods .pro_item a{
+.goods .pro_item span{
     color: #999;
     width: 96%;
     display: block;
     margin: 0 auto;
 }
-.goods .pro_item a img{
+.goods .pro_item span img{
     width: 100%;
 }
 .goods .pro_item p{
