@@ -9,7 +9,7 @@ class ClassifySort extends Component{
                 {text:"销量"},
                 {text:"价格"}
             ],
-            currentIdx:1
+            currentIdx:""
         }
     }
     sortNav(){
