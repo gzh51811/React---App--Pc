@@ -30,3 +30,37 @@
     color:#333;
 }
 /* nav导航 */
+.detailsNav{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    overflow: hidden;
+    color:#666;
+    box-sizing: border-box;
+    /* position: absolute; */
+}
+.detailsNav .ant-tabs-nav {
+    width: 100%;
+  }
+.detailsNav .ant-tabs-tab{
+    height: 44px;
+    width:33.3%;
+    text-align: center;
+    margin:0;
+  }
+  .detailsNav .ant-tabs-nav .ant-tabs-tab-active{
+    color: red;
+  }
+  .detailsNav .ant-tabs-nav .ant-tabs-tab:hover{
+    color: red;
+  }
+  .detailsNav .ant-tabs-ink-bar{
+      background:red;
+  }
+  .detailsNav .ant-tabs-bar{
+    border-bottom:0 none;
+  }

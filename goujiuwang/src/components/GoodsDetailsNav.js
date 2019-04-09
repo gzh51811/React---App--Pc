@@ -1,6 +1,6 @@
 import React,{Component} from "react";
-import {Row,Col} from "antd";
-
+import {Row,Col,Tabs } from "antd";
+const TabPane = Tabs.TabPane;
 class GoodsDetailsNav extends Component{
     constructor(){
         super();
@@ -10,9 +10,11 @@ class GoodsDetailsNav extends Component{
     }
     render(){
         return (
-            <Row>
-                {this.state.content.map(item=><Col span={8} key={item}>{item}</Col>)}
-            </Row>
+                <Tabs defaultActiveKey="0"  className="detailsNav" >
+                    {this.state.content.map((item,idx)=><TabPane tab={item} key={idx} ></TabPane>)}
+                </Tabs>
+           
+         
         )
     }
 }
