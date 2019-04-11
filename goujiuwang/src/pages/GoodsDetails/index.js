@@ -1,7 +1,7 @@
 import React,{Component} from "react";
-import GoodsDetailsHeader from "../../components/GoodsDetailsHeader";
-import GoodsDetailsNav from "../../components/GoodsDetailsNav";
-import GoodsDetailsBanner from "../../components/GoodsDetailsBanner";
+import GoodsDetailsHeader from "../../components/GoodsDetails/GoodsDetailsHeader";
+import GoodsDetailsNav from "../../components/GoodsDetails/GoodsDetailsNav";
+import GoodsDetailsBanner from "../../components/GoodsDetails/GoodsDetailsBanner";
 import withAxios from "../../hoc/withAxios";
 import Qs from "qs";
 import "./GoodsDetails.css";

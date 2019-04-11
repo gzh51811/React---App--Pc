@@ -23,7 +23,7 @@ class HomeNotice extends Component{
         return (
             <div className="Notice">
                 <div className="ico">
-                    <img src={require('../assets/images/toutiao.png')} alt="aaa" />
+                    <img src={require('../../assets/images/toutiao.png')} alt="aaa" />
                 </div>
                 <div className="swiper-container" id="swiper2">
                     <div className="swiper-wrapper">

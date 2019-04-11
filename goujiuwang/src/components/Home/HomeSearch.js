@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from 'antd';
 import 'antd/dist/antd.css';
-import "../pages/Home/Home.css"
+import "../../pages/Home/Home.css";
 
 function HomeSearch(props){
     return (

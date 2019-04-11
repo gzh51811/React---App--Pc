@@ -1,14 +1,14 @@
 import React,{Component} from "react";
 import "./Home.css";
-import HomeHeaderBanner from "../../components/HomeHeaderBanner";
-import HomeNotice from "../../components/HomeNotice";
-import HomeGoodscCassify from "../../components/HomeGoodscCassify";
-import HomeOverSeckill from "../../components/HomeOverSeckill";
-import HomeSeckillGoods from "../../components/HomeSeckillGoods";
-import HomeAdvertising from "../../components/HomeAdvertising";
-import HomeContainer from "../../components/HomeContainer";
-import HomeGoodsList from "../../components/HomeGoodsList";
-import HomeSearch from "../../components/HomeSearch";
+import HomeHeaderBanner from "../../components/Home/HomeHeaderBanner";
+import HomeNotice from "../../components/Home/HomeNotice";
+import HomeGoodscCassify from "../../components/Home/HomeGoodscCassify";
+import HomeOverSeckill from "../../components/Home/HomeOverSeckill";
+import HomeSeckillGoods from "../../components/Home/HomeSeckillGoods";
+import HomeAdvertising from "../../components/Home/HomeAdvertising";
+import HomeContainer from "../../components/Home/HomeContainer";
+import HomeGoodsList from "../../components/Home/HomeGoodsList";
+import HomeSearch from "../../components/Home/HomeSearch";
 import withAxios from "../../hoc/withAxios";
 class Home extends Component{
     constructor(){

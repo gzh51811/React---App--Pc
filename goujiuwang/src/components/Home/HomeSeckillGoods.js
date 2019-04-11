@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Swiper from "swiper";
-import withAxios from "../hoc/withAxios";
+import withAxios from "../../hoc/withAxios";
 class HomeSeckillGoods extends Component{
     constructor(){
         super();

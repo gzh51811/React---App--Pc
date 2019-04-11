@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import {Row,Col} from "antd";
-import withAxios from "../hoc/withAxios";
+import withAxios from "../../hoc/withAxios";
 import {withRouter} from "react-router-dom";
 import url from "url";
 

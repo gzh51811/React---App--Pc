@@ -1,7 +1,7 @@
 import React,{Component} from "react";
-import GoodsListSearch from "../../components/GoodsListSearch";
-import GoodsListSort from "../../components/GoodsListSort";
-import GoodsLists from "../../components/GoodsLists";
+import GoodsListSearch from "../../components/GoodsList/GoodsListSearch";
+import GoodsListSort from "../../components/GoodsList/GoodsListSort";
+import GoodsLists from "../../components/GoodsList/GoodsLists";
 
 import "./GoodsList.css";
 class GoodsList extends Component{

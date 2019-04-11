@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import HomeSearch from "../../components/HomeSearch";
+import HomeSearch from "../../components/Home/HomeSearch";
 import ClassifyList from"../../components/ClassifyList";
 import "./classify.css";
 class Classification extends Component{ 
