@@ -1,0 +1,5 @@
+{
+    "host": "localhost",
+    "root": "../build",
+    "port": 10000
+}

@@ -1,0 +1,37 @@
+const express = require("express");
+
+const Router = express.Router()
+
+const bodyParser = require("body-parser");
+
+let urlencoded = bodyParser.urlencoded({ extended: false });
+
+const db = require('../db/index.js');
+
+Router.post('/',urlencoded,async(req,res) => {
+
+    let {username,password} = req.body;
+   
+    let data = await db.insert('user', {username,password});
+   
+    
+    if (data.ops.length>0) {
+        res.send({
+            code: 1,
+            msg: "注册成功",
+            data: {
+                username,
+            }
+        })
+    } else {
+        res.send({
+            code: 0,
+            msg: "注册失败",
+            data: {
+                username,
+            }
+        })
+    }
+    
+});
+module.exports = Router;

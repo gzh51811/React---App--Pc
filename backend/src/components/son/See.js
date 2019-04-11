@@ -136,7 +136,7 @@ class EditableTable extends React.Component {
       dataSource:[],
       count:0,
     };
-    fetch('http://10.3.137.251:10000/backstage')
+    fetch('http://47.107.113.128:10001/backstage')
       .then(res => res.json())
       .then(data => {
         console.log(data.data)
